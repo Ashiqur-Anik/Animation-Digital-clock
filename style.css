@@ -1,0 +1,55 @@
+body {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.time {
+    display: flex;
+    gap: 40px;
+    color: white;
+}
+
+.time .circle {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle div {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.circle div span {
+    font-size: 25px;
+}
+
+.circle svg {
+    transform: rotate(270deg);
+}
+
+svg circle {
+    fill: transparent;
+    stroke: black;
+    stroke-width: 8px;
+    transform: translate(5px, 5px);
+
+}
+
+svg circle:nth-child(2) {
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+}
+
+.am {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
